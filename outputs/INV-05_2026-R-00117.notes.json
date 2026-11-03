@@ -1,0 +1,7 @@
+{
+  "layout": "v2",
+  "derived_fields": [
+    "totals.net_by_vat_rate (not printed; summed from line items)",
+    "totals.vat_total (not printed; sum of printed per-rate VAT)"
+  ]
+}

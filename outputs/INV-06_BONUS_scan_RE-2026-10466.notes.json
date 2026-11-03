@@ -1,0 +1,61 @@
+{
+  "layout": "scan/legacy",
+  "ocr": {
+    "variants": 6,
+    "reconciled": [
+      "row 2: majority vote {'qty': '20', 'total': '295.60'} replaced by arithmetic-consistent reading",
+      "totals: net/vat/gross are arithmetic results of the OCR'd lines (net, net x rate, net + vat), accepted only when the OCR text of the totals block agrees within one character"
+    ],
+    "trust": {
+      "line_items[1].qty/unit_price/PE/discount/total": "medium (qty 6/6 votes; OCR-vs-arithmetic similarity price 0.89, total 1.0; unit_price/total chosen so that the arithmetic closes)",
+      "line_items[1].article_number": "LOW (2/2 variants agree)",
+      "line_items[1].unit": "LOW (fuzzy-matched to Stk/m/psch)",
+      "line_items[1].vat_rate": "medium (6/6)",
+      "line_items[1].description": "LOW (free text, OCR noise)",
+      "line_items[2].qty/unit_price/PE/discount/total": "medium (qty 3/6 votes; OCR-vs-arithmetic similarity price 1.0, total 0.96; unit_price/total chosen so that the arithmetic closes)",
+      "line_items[2].article_number": "LOW (2/5 variants agree)",
+      "line_items[2].unit": "medium (fuzzy-matched to Stk/m/psch)",
+      "line_items[2].vat_rate": "LOW (0/0)",
+      "line_items[2].description": "LOW (free text, OCR noise)",
+      "line_items[3].qty/unit_price/PE/discount/total": "LOW (arithmetic closes but weak OCR agreement)",
+      "line_items[3].article_number": "medium (4/6 variants agree)",
+      "line_items[3].unit": "medium (fuzzy-matched to Stk/m/psch)",
+      "line_items[3].vat_rate": "medium (5/5)",
+      "line_items[3].description": "LOW (free text, OCR noise)",
+      "line_items[4].qty/unit_price/PE/discount/total": "LOW (arithmetic closes but weak OCR agreement)",
+      "line_items[4].article_number": "LOW (1/1 variants agree)",
+      "line_items[4].unit": "medium (fuzzy-matched to Stk/m/psch)",
+      "line_items[4].vat_rate": "LOW (0/0)",
+      "line_items[4].description": "LOW (free text, OCR noise)",
+      "totals.net[19]": "LOW (sum of OCR'd lines; printed net not corroborated by OCR)",
+      "totals.vat[19]": "LOW (= net x 19%; printed VAT not corroborated by OCR)",
+      "totals.gross_total": "LOW (= net + vat; not corroborated by OCR)",
+      "document_number": "medium (3/3 variants agree)",
+      "document_date": "medium (5/5 variants agree)",
+      "service_date": "LOW (1/1 variants agree)",
+      "order_reference": "medium (3/4 variants agree)",
+      "delivery_note_number": "medium (4/5 variants agree)",
+      "buyer.customer_number": "medium (4/4 variants agree)",
+      "buyer.street": "LOW (1/5 variants agree)",
+      "buyer.name": "medium (4/6 variants agree)",
+      "buyer.postal_code": "medium (5/6 variants agree)",
+      "buyer.city": "LOW (OCR has no German model: umlauts/ß unreliable)",
+      "due_date": "medium (4/4 variants agree)",
+      "supplier.name / vat_id": "constant of this fingerprint (footer too small to OCR) – NOT read from the scan",
+      "document_type": "assumed from the 'RECHNUNG' template heading position (not OCR-verified)",
+      "cash_discount": "null (no Skonto sentence found; not verified by OCR)"
+    },
+    "raw_header_sample": {
+      "meta_txt": [
+        "Rechnungs Nr RE - 2026 166\nOatum 15 10 2026\nKunden Nr aget?\ninre Bestoliung 4520093588 vom D6 10.2026\ntaelerschars Nr LS $9055\nLastynasdatum i410 2026\n"
+      ],
+      "buyer_txt": [
+        "emer est ae Oe Guede Cleweortnrtipte SRL Usihwger\nRhamwerk Anlagenbau AG\n\nAbt Kreditorenbuchhaltung\n\nHafenstrahe 64\n\n47139 Dursburg\n"
+      ]
+    }
+  },
+  "derived_fields": [
+    "totals.net_total (not printed; sum of printed per-rate nets)",
+    "totals.vat_total (not printed; sum of printed per-rate VAT)"
+  ]
+}

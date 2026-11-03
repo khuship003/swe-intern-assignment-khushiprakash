@@ -1,0 +1,8 @@
+{
+  "layout": "legacy",
+  "carry_overs": [],
+  "derived_fields": [
+    "totals.net_total (not printed; sum of printed per-rate nets)",
+    "totals.vat_total (not printed; sum of printed per-rate VAT)"
+  ]
+}

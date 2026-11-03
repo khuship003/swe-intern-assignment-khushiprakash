@@ -1,0 +1,5 @@
+pdfplumber>=0.11
+Pillow>=10
+numpy>=1.26
+pytesseract>=0.3.10     # bonus (scan) only; also needs the `tesseract` binary installed on the system
+jsonschema>=4           # optional: tests/check_outputs.py uses it if installed

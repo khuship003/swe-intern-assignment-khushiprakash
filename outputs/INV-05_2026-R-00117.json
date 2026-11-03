@@ -1,0 +1,98 @@
+{
+  "document_type": "invoice",
+  "document_number": "2026-R-00117",
+  "document_date": "2026-10-19",
+  "service_date": "2026-10-16",
+  "due_date": "2026-11-18",
+  "currency": "EUR",
+  "supplier": {
+    "name": "Kessler Industrietechnik GmbH",
+    "vat_id": "DE287364519"
+  },
+  "buyer": {
+    "name": "Rheinwerk Anlagenbau AG",
+    "street": "Hafenstraße 88",
+    "postal_code": "47119",
+    "city": "Duisburg",
+    "customer_number": "40217"
+  },
+  "order_reference": "4500093701",
+  "delivery_note_number": "LS-59188",
+  "referenced_invoice": null,
+  "line_items": [
+    {
+      "position": 1,
+      "article_number": "KI-40112",
+      "description": "Rillenkugellager 6205-2RS",
+      "quantity": 30.0,
+      "unit": "Stk",
+      "unit_price": 8.69,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 260.7,
+      "vat_rate": 19
+    },
+    {
+      "position": 2,
+      "article_number": "KI-31009",
+      "description": "Linearführungswagen HGH25CA",
+      "quantity": 4.0,
+      "unit": "Stk",
+      "unit_price": 116.4,
+      "price_unit": 1.0,
+      "discount_percent": 3.0,
+      "line_total": 451.63,
+      "vat_rate": 19
+    },
+    {
+      "position": 3,
+      "article_number": "KI-20811",
+      "description": "Sechskantschraube DIN 933 M10x40 8.8 verz. Preis je Stück (neue Preisliste 2026/2)",
+      "quantity": 600.0,
+      "unit": "Stk",
+      "unit_price": 0.152,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 91.2,
+      "vat_rate": 19
+    },
+    {
+      "position": 4,
+      "article_number": "KI-77002",
+      "description": "Schmierfett Lithium EP2 400g Kartusche",
+      "quantity": 12.0,
+      "unit": "Stk",
+      "unit_price": 10.15,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 121.8,
+      "vat_rate": 19
+    },
+    {
+      "position": 5,
+      "article_number": "BU-90034",
+      "description": "Fachbuch: Hydraulik in Theorie und Praxis",
+      "quantity": 1.0,
+      "unit": "Stk",
+      "unit_price": 49.8,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 49.8,
+      "vat_rate": 7
+    }
+  ],
+  "totals": {
+    "net_by_vat_rate": {
+      "19": 925.33,
+      "7": 49.8
+    },
+    "vat_by_vat_rate": {
+      "19": 175.81,
+      "7": 3.49
+    },
+    "net_total": 975.13,
+    "vat_total": 179.3,
+    "gross_total": 1154.43
+  },
+  "cash_discount": null
+}

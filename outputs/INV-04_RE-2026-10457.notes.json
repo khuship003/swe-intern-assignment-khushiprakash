@@ -1,0 +1,15 @@
+{
+  "layout": "legacy",
+  "carry_overs": [
+    {
+      "page": 1,
+      "printed": 4096.22,
+      "sum_of_lines_so_far": 4096.22
+    }
+  ],
+  "derived_fields": [
+    "totals.net_total (not printed; sum of printed per-rate nets)",
+    "totals.vat_total (not printed; sum of printed per-rate VAT)",
+    "cash_discount.until (printed as 'N Tage ab Rechnungsdatum'; = document_date + N)"
+  ]
+}

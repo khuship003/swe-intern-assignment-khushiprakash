@@ -1,0 +1,19 @@
+{
+  "layout": "legacy",
+  "carry_overs": [
+    {
+      "page": 1,
+      "printed": 1323.7,
+      "sum_of_lines_so_far": 1323.7
+    },
+    {
+      "page": 2,
+      "printed": 4299.58,
+      "sum_of_lines_so_far": 4299.58
+    }
+  ],
+  "derived_fields": [
+    "totals.net_total (not printed; sum of printed per-rate nets)",
+    "totals.vat_total (not printed; sum of printed per-rate VAT)"
+  ]
+}

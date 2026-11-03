@@ -1,0 +1,72 @@
+{
+  "document_type": "credit_note",
+  "document_number": "GS-2026-00872",
+  "document_date": "2026-10-12",
+  "service_date": null,
+  "due_date": null,
+  "currency": "EUR",
+  "supplier": {
+    "name": "Kessler Industrietechnik GmbH",
+    "vat_id": "DE287364519"
+  },
+  "buyer": {
+    "name": "Rheinwerk Anlagenbau AG",
+    "street": "Hafenstraße 88",
+    "postal_code": "47119",
+    "city": "Duisburg",
+    "customer_number": "40217"
+  },
+  "order_reference": "4500092977",
+  "delivery_note_number": "LS-58733",
+  "referenced_invoice": "RE-2026-10133",
+  "line_items": [
+    {
+      "position": 1,
+      "article_number": "KI-31009",
+      "description": "Linearführungswagen HGH25CA Rücksendung lt. RMA-2026-0388, Transportschaden",
+      "quantity": 2.0,
+      "unit": "Stk",
+      "unit_price": 112.9,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": -225.8,
+      "vat_rate": 19
+    },
+    {
+      "position": 2,
+      "article_number": "KI-63310",
+      "description": "Hydraulikschlauch 2SN DN10 1/2\" Mengendifferenz Lieferung LS-58733",
+      "quantity": 12.5,
+      "unit": "m",
+      "unit_price": 12.4,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": -155.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 3,
+      "article_number": "KI-20844",
+      "description": "Sechskantmutter DIN 934 M10 8 verz. falsche Festigkeitsklasse geliefert",
+      "quantity": 500.0,
+      "unit": "Stk",
+      "unit_price": 3.85,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": -19.25,
+      "vat_rate": 19
+    }
+  ],
+  "totals": {
+    "net_by_vat_rate": {
+      "19": -400.05
+    },
+    "vat_by_vat_rate": {
+      "19": -76.01
+    },
+    "net_total": -400.05,
+    "vat_total": -76.01,
+    "gross_total": -476.06
+  },
+  "cash_discount": null
+}

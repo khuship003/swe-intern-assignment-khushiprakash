@@ -1,0 +1,112 @@
+{
+  "document_type": "invoice",
+  "document_number": "RE-2026-10418",
+  "document_date": "2026-10-06",
+  "service_date": "2026-10-02",
+  "due_date": "2026-11-05",
+  "currency": "EUR",
+  "supplier": {
+    "name": "Kessler Industrietechnik GmbH",
+    "vat_id": "DE287364519"
+  },
+  "buyer": {
+    "name": "Rheinwerk Anlagenbau AG",
+    "street": "Hafenstraße 88",
+    "postal_code": "47119",
+    "city": "Duisburg",
+    "customer_number": "40217"
+  },
+  "order_reference": "4500093317",
+  "delivery_note_number": "LS-58821",
+  "referenced_invoice": null,
+  "line_items": [
+    {
+      "position": 1,
+      "article_number": "KI-40112",
+      "description": "Rillenkugellager 6205-2RS",
+      "quantity": 24.0,
+      "unit": "Stk",
+      "unit_price": 8.45,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 202.8,
+      "vat_rate": 19
+    },
+    {
+      "position": 2,
+      "article_number": "KI-40387",
+      "description": "Wellendichtring 35x52x7 NBR",
+      "quantity": 50.0,
+      "unit": "Stk",
+      "unit_price": 1.92,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 96.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 3,
+      "article_number": "KI-71004",
+      "description": "Zahnriemen HTD 8M-1200-30",
+      "quantity": 6.0,
+      "unit": "Stk",
+      "unit_price": 46.8,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 280.8,
+      "vat_rate": 19
+    },
+    {
+      "position": 4,
+      "article_number": "KI-55219",
+      "description": "Spannelement Typ RFN 7012 40x65",
+      "quantity": 4.0,
+      "unit": "Stk",
+      "unit_price": 38.15,
+      "price_unit": 1.0,
+      "discount_percent": 5.0,
+      "line_total": 144.97,
+      "vat_rate": 19
+    },
+    {
+      "position": 5,
+      "article_number": "KI-20811",
+      "description": "Sechskantschraube DIN 933 M10x40 8.8 verz.",
+      "quantity": 400.0,
+      "unit": "Stk",
+      "unit_price": 14.6,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": 58.4,
+      "vat_rate": 19
+    },
+    {
+      "position": 6,
+      "article_number": "DL-00001",
+      "description": "Versandkostenpauschale",
+      "quantity": 1.0,
+      "unit": "psch",
+      "unit_price": 18.5,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 18.5,
+      "vat_rate": 19
+    }
+  ],
+  "totals": {
+    "net_by_vat_rate": {
+      "19": 801.47
+    },
+    "vat_by_vat_rate": {
+      "19": 152.28
+    },
+    "net_total": 801.47,
+    "vat_total": 152.28,
+    "gross_total": 953.75
+  },
+  "cash_discount": {
+    "percent": 2.0,
+    "until": "2026-10-16",
+    "amount": 19.08
+  }
+}

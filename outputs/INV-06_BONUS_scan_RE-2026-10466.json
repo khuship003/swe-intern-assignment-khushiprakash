@@ -1,0 +1,84 @@
+{
+  "document_type": "invoice",
+  "document_number": "RE-2026-10466",
+  "document_date": "2026-10-15",
+  "service_date": "2026-10-15",
+  "due_date": "2026-11-14",
+  "currency": "EUR",
+  "supplier": {
+    "name": "Kessler Industrietechnik GmbH",
+    "vat_id": "DE287364519"
+  },
+  "buyer": {
+    "name": "Rhemwerk Anlagenbau AG",
+    "street": "Hafenstrahe 64",
+    "postal_code": "47139",
+    "city": "Dursburg",
+    "customer_number": "40217"
+  },
+  "order_reference": "4520093588",
+  "delivery_note_number": "LS-59055",
+  "referenced_invoice": null,
+  "line_items": [
+    {
+      "position": 1,
+      "article_number": "KI-30178",
+      "description": "Fullonkugelager 6206-22",
+      "quantity": 16.0,
+      "unit": "",
+      "unit_price": 10.9,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 174.4,
+      "vat_rate": 19
+    },
+    {
+      "position": 2,
+      "article_number": "KI-63310",
+      "description": "Hydrauhaschtauce 2SN CNI1D Is",
+      "quantity": 20.0,
+      "unit": "m",
+      "unit_price": 12.4,
+      "price_unit": 1.0,
+      "discount_percent": 5.0,
+      "line_total": 235.6,
+      "vat_rate": 19
+    },
+    {
+      "position": 3,
+      "article_number": "KI-20844",
+      "description": "Sachsaantsutier DIN Y34 M10 8 vers",
+      "quantity": 300.0,
+      "unit": "Stk",
+      "unit_price": 4.85,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": 14.55,
+      "vat_rate": 19
+    },
+    {
+      "position": 4,
+      "article_number": "BU-90011",
+      "description": "Fachbuch Tabellenbuch Meta 49 Auf",
+      "quantity": 1.0,
+      "unit": "Stk",
+      "unit_price": 3.45,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 3.45,
+      "vat_rate": 19
+    }
+  ],
+  "totals": {
+    "net_by_vat_rate": {
+      "19": 428.0
+    },
+    "vat_by_vat_rate": {
+      "19": 81.32
+    },
+    "net_total": 428.0,
+    "vat_total": 81.32,
+    "gross_total": 509.32
+  },
+  "cash_discount": null
+}

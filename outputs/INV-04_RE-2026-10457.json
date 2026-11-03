@@ -1,0 +1,222 @@
+{
+  "document_type": "invoice",
+  "document_number": "RE-2026-10457",
+  "document_date": "2026-10-14",
+  "service_date": "2026-10-13",
+  "due_date": "2026-11-13",
+  "currency": "EUR",
+  "supplier": {
+    "name": "Kessler Industrietechnik GmbH",
+    "vat_id": "DE287364519"
+  },
+  "buyer": {
+    "name": "Rheinwerk Anlagenbau AG",
+    "street": "Hafenstraße 88",
+    "postal_code": "47119",
+    "city": "Duisburg",
+    "customer_number": "40217"
+  },
+  "order_reference": "4500093560",
+  "delivery_note_number": "LS-59012",
+  "referenced_invoice": null,
+  "line_items": [
+    {
+      "position": 1,
+      "article_number": "KI-31044",
+      "description": "Profilschiene HGR25 L=1500 mm Zuschnitt auf Maß, Toleranz ±0,5 mm",
+      "quantity": 4.0,
+      "unit": "Stk",
+      "unit_price": 96.3,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 385.2,
+      "vat_rate": 19
+    },
+    {
+      "position": 2,
+      "article_number": "KI-31009",
+      "description": "Linearführungswagen HGH25CA",
+      "quantity": 8.0,
+      "unit": "Stk",
+      "unit_price": 112.9,
+      "price_unit": 1.0,
+      "discount_percent": 5.0,
+      "line_total": 858.04,
+      "vat_rate": 19
+    },
+    {
+      "position": 3,
+      "article_number": "KI-20811",
+      "description": "Sechskantschraube DIN 933 M10x40 8.8 verz.",
+      "quantity": 1000.0,
+      "unit": "Stk",
+      "unit_price": 14.6,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": 146.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 4,
+      "article_number": "KI-20902",
+      "description": "Scheibe DIN 125 A 10,5 St verz.",
+      "quantity": 1000.0,
+      "unit": "Stk",
+      "unit_price": 1.95,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": 19.5,
+      "vat_rate": 19
+    },
+    {
+      "position": 5,
+      "article_number": "KI-88120",
+      "description": "Kabelkanal 60x60 grau",
+      "quantity": 37.5,
+      "unit": "m",
+      "unit_price": 7.2,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 270.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 6,
+      "article_number": "KI-63377",
+      "description": "Pressfitting DKOL M18x1,5 12L",
+      "quantity": 24.0,
+      "unit": "Stk",
+      "unit_price": 6.75,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 162.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 7,
+      "article_number": "KI-71004",
+      "description": "Zahnriemen HTD 8M-1200-30 Charge 2026-131",
+      "quantity": 26.0,
+      "unit": "Stk",
+      "unit_price": 48.02,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 1284.52,
+      "vat_rate": 19
+    },
+    {
+      "position": 8,
+      "article_number": "KI-77002",
+      "description": "Schmierfett Lithium EP2 400g Kartusche",
+      "quantity": 36.0,
+      "unit": "Stk",
+      "unit_price": 9.85,
+      "price_unit": 1.0,
+      "discount_percent": 10.0,
+      "line_total": 319.14,
+      "vat_rate": 19
+    },
+    {
+      "position": 9,
+      "article_number": "KI-40118",
+      "description": "Rillenkugellager 6206-2Z",
+      "quantity": 40.0,
+      "unit": "Stk",
+      "unit_price": 10.9,
+      "price_unit": 1.0,
+      "discount_percent": 3.0,
+      "line_total": 422.92,
+      "vat_rate": 19
+    },
+    {
+      "position": 10,
+      "article_number": "KI-55219",
+      "description": "Spannelement Typ RFN 7012 40x65",
+      "quantity": 6.0,
+      "unit": "Stk",
+      "unit_price": 38.15,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 228.9,
+      "vat_rate": 19
+    },
+    {
+      "position": 11,
+      "article_number": "KI-63310",
+      "description": "Hydraulikschlauch 2SN DN10 1/2\" lt. Ihrer Anfrage vom 11.09.2026",
+      "quantity": 50.0,
+      "unit": "m",
+      "unit_price": 12.4,
+      "price_unit": 1.0,
+      "discount_percent": 5.0,
+      "line_total": 589.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 12,
+      "article_number": "KI-40112",
+      "description": "Rillenkugellager 6205-2RS",
+      "quantity": 60.0,
+      "unit": "Stk",
+      "unit_price": 8.45,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 507.0,
+      "vat_rate": 19
+    },
+    {
+      "position": 13,
+      "article_number": "KI-20844",
+      "description": "Sechskantmutter DIN 934 M10 8 verz.",
+      "quantity": 1000.0,
+      "unit": "Stk",
+      "unit_price": 3.85,
+      "price_unit": 100.0,
+      "discount_percent": null,
+      "line_total": 38.5,
+      "vat_rate": 19
+    },
+    {
+      "position": 14,
+      "article_number": "BU-90011",
+      "description": "Fachbuch: Tabellenbuch Metall, 48. Aufl.",
+      "quantity": 2.0,
+      "unit": "Stk",
+      "unit_price": 34.9,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 69.8,
+      "vat_rate": 7
+    },
+    {
+      "position": 15,
+      "article_number": "DL-00001",
+      "description": "Versandkostenpauschale",
+      "quantity": 1.0,
+      "unit": "psch",
+      "unit_price": 18.5,
+      "price_unit": 1.0,
+      "discount_percent": null,
+      "line_total": 18.5,
+      "vat_rate": 19
+    }
+  ],
+  "totals": {
+    "net_by_vat_rate": {
+      "19": 5213.22,
+      "7": 69.8
+    },
+    "vat_by_vat_rate": {
+      "19": 990.51,
+      "7": 4.89
+    },
+    "net_total": 5283.02,
+    "vat_total": 995.4,
+    "gross_total": 6278.42
+  },
+  "cash_discount": {
+    "percent": 3.0,
+    "until": "2026-10-21",
+    "amount": 188.35
+  }
+}

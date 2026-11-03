@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DLAI FP Ops Dev Assignment – extraction output (one file per PDF)",
+  "type": "object",
+  "required": ["document_type", "document_number", "document_date", "currency", "supplier", "buyer", "line_items", "totals"],
+  "properties": {
+    "document_type": {"enum": ["invoice", "credit_note"]},
+    "document_number": {"type": "string", "description": "Exactly as printed, e.g. RE-2026-10418"},
+    "document_date": {"type": "string", "format": "date", "description": "ISO 8601, YYYY-MM-DD"},
+    "service_date": {"type": ["string", "null"], "format": "date", "description": "Leistungs-/Lieferdatum, ISO 8601, null if not printed"},
+    "due_date": {"type": ["string", "null"], "format": "date", "description": "Date by which the full amount is due (no cash discount). null if not printed or not derivable"},
+    "currency": {"const": "EUR"},
+    "supplier": {
+      "type": "object", "required": ["name", "vat_id"],
+      "properties": {"name": {"type": "string"}, "vat_id": {"type": "string", "description": "USt-IdNr. without spaces, e.g. DE123456789"}}
+    },
+    "buyer": {
+      "type": "object", "required": ["name", "street", "postal_code", "city", "customer_number"],
+      "properties": {
+        "name": {"type": "string", "description": "Company name only – no department / attention lines"},
+        "street": {"type": "string"}, "postal_code": {"type": "string"}, "city": {"type": "string"},
+        "customer_number": {"type": "string"}
+      }
+    },
+    "order_reference": {"type": ["string", "null"], "description": "Buyer's order number only (no 'vom <date>')"},
+    "delivery_note_number": {"type": ["string", "null"]},
+    "referenced_invoice": {"type": ["string", "null"], "description": "Credit notes only: number of the invoice being credited, else null"},
+    "line_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["position", "article_number", "description", "quantity", "unit", "unit_price", "price_unit", "line_total", "vat_rate"],
+        "properties": {
+          "position": {"type": "integer", "description": "As printed (leading zeros removed)"},
+          "article_number": {"type": "string"},
+          "description": {"type": "string", "description": "Main description plus any additional description lines printed under it, joined with single spaces. Discount rows are NOT part of the description"},
+          "quantity": {"type": "number"},
+          "unit": {"type": "string", "description": "As printed, e.g. Stk, m, psch"},
+          "unit_price": {"type": "number", "description": "Price as printed, per price_unit"},
+          "price_unit": {"type": "number", "description": "Number of units the unit_price refers to (PE / Preiseinheit). 1 if not printed"},
+          "discount_percent": {"type": ["number", "null"], "description": "Line discount in %, null if none"},
+          "line_total": {"type": "number", "description": "Line amount after line discount, as printed. Negative for credit notes"},
+          "vat_rate": {"type": "integer", "description": "e.g. 19 or 7"}
+        }
+      }
+    },
+    "totals": {
+      "type": "object", "required": ["net_by_vat_rate", "vat_by_vat_rate", "net_total", "vat_total", "gross_total"],
+      "properties": {
+        "net_by_vat_rate": {"type": "object", "description": "Keys are VAT rates as strings, e.g. {\"19\": 801.47, \"7\": 34.90}. Values as printed"},
+        "vat_by_vat_rate": {"type": "object"},
+        "net_total": {"type": "number"}, "vat_total": {"type": "number"}, "gross_total": {"type": "number"}
+      }
+    },
+    "cash_discount": {
+      "type": ["object", "null"], "description": "Skonto terms if printed, else null. Informational only – never subtract it from any total",
+      "properties": {"percent": {"type": "number"}, "until": {"type": "string", "format": "date"}, "amount": {"type": "number"}}
+    }
+  }
+}
