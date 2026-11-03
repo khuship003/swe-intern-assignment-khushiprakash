@@ -1,7 +1,7 @@
 # Failure log
 
 Each entry: what went wrong → how I noticed → what I changed → how I verified.
-(Most of the code was written with Claude, so "AI suggestion" and "my bug" overlap; the entries are real events from the build.)
+Most of the code was written by Claude. Entries below are things I reproduced or checked myself on my own computer.
 
 ## 1. Price and PE column are glued: `14,60100`
 * **Wrong:** my first idea was to split each row by whitespace and read the last columns by index. On rows with PE 100
