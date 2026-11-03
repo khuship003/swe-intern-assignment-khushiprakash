@@ -8,7 +8,14 @@
 ## Two concrete examples where the AI's answer was wrong or incomplete
 1. 1. **Linux command on a Windows computer.** The README and the AI's first instructions used the Linux loop
    `for f in pdfs/INV-0*.pdf; do python extract.py "$f"; done`. My terminal is Windows PowerShell, so I ran it
-   and got: <<paste your real error message>>. I used the PowerShell version instead:
+   and got: 
+Missing opening '(' after keyword 'for'.
+At line:1 char:29
++ for f in pdfs/INV-0*.pdf; do python extract.py "$f"; done
++                             ~
+Missing statement body in do loop.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingOpenParenthesisAfterKeyword. I used the PowerShell version instead:
    `Get-ChildItem pdfs\INV-0[1-5]*.pdf | ForEach-Object { python extract.py $_.FullName }`, which printed
    OK for INV-01 to INV-05. The README still shows the Linux command, so I added the PowerShell version to it.
 2. 2. **OCR numbers that add up but are wrong.** The AI's code for the scanned invoice (INV-06) picks values so that
